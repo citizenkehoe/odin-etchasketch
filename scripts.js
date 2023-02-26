@@ -1,9 +1,16 @@
-for (let i = 0; i < 256; i++) {
-    let etchContainer = document.getElementById('etch-contianer');
+let magicNum = 16;
+let totalSquares = magicNum ** 2;
+let etchContainer = document.getElementById('etch-contianer');
+
+
+for (let i = 0; i < totalSquares; i++) {
     let etchPoint = document.createElement('div');
     etchPoint.classList.add('square');
     etchContainer.appendChild(etchPoint);
 };
+
+etchContainer.style.gridTemplateColumns = `repeat(${magicNum}, 1fr)`;
+etchContainer.style.gridTemplateRows = `repeat(${magicNum}, 1fr)`;
 
 function etchMe() {
     this.classList.add('etched');

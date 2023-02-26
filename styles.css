@@ -19,6 +19,7 @@ body {
     display: flex;
     gap: 30px;
     justify-content: center;
+    margin-bottom: 20px;
     text-shadow: 1px 1px 4px #423800;
 }
 
@@ -43,8 +44,8 @@ body {
 
 .etch-container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    /* grid-template-columns: repeat(16, 1fr); */
+    /* grid-template-rows: repeat(16, 1fr); */
     height: 400px;
     width: 400px;
     margin: 0 auto;
