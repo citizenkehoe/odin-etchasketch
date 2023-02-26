@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 body {
@@ -22,5 +23,5 @@ body {
 .square {
     width: auto;
     aspect-ratio: 1/1;
-    outline: 1px solid red;
+    border: .5px solid lightgrey;
 }
