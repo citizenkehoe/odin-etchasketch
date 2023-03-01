@@ -8,6 +8,7 @@ body {
     background-color: #E00000;
     display: flex;
     flex-direction: column;
+    gap: 30px;
     justify-content: center;
     min-height: 100vh;
 }
@@ -19,7 +20,6 @@ body {
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-bottom: 20px;
     text-shadow: 1px 1px 4px #423800;
 }
 
@@ -59,4 +59,26 @@ body {
 
 .etched {
     background-color: #333;
+}
+
+.button-section {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #ededed;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px #333;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    padding: 10px 25px;
+    transition: background-color .2s;
+}
+button:hover {
+    background-color: #FFDE2E;
+    cursor: pointer;
+    transition: background-color .2s;
 }
