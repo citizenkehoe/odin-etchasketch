@@ -24,7 +24,6 @@ function etchMe() {
 function makeEtchPoints() {
     let etchPoints = document.querySelectorAll('.square');
     etchPoints.forEach(etchPoint => {
-        console.log('im here');
         etchPoint.addEventListener('pointerover', etchMe);
     });
     return etchPoints;
@@ -43,7 +42,7 @@ resetButton.addEventListener('click', clearSketch);
 function makeNewEtch() {
     let input = prompt("How detailed of a sketch would you like to etch?", "Enter number between 1 and 100");
     if (isNaN(input) || input < 1 || input > 100) {
-        alert('Error; please enter an number between 1 and 100.');
+        alert('Error; please enter a number between 1 and 100.');
     } else {
         clearSketch();
         while (etchContainer.firstChild) {
